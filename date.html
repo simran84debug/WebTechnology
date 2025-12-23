@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <style>
+        body {
+            display: flex;
+            justify-content:center;
+            align-items:center; 
+            height: 100vh;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <p></p>
+    
+</body>
+<script>
+    function updateTime(){
+        let el=document.body.children[0];
+        let t=new Date();
+        el.innerText=t.toLocaleString();
+    }
+    setInterval(updateTime,1000);
+
+</script>
+</html>

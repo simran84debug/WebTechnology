@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <style>
+        body {
+            display: flex;
+            justify-content:center;
+            align-items:center; 
+            height: 100vh;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <p> Hello, World! </p>
+    
+</body>
+<script>
+    let mySize = 20;
+    let growing = true;
+    let el = document.body.children[0];
+    function growShrink(){
+        if ( growing ) {
+            mySize = mySize + 2;
+            el.innerText="Growing";
+            if (mySize > 200) growing = false;
+        } else {
+                mySize = mySize - 2;
+                 el.innerText="Shrinking";
+                if ( mySize < 20) growing = true;
+            }
+            el.style.fontSize = mySize + 'px';
+            }
+        
+        setInterval(growShrink,100);
+    </script>
+</html>

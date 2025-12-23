@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+    *{
+    padding:0%;
+    margin: 0%;
+    box-sizing: border-box; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:25% 25% 25% 25%;
+    width:300px;
+    gap:10px;
+}
+
+.calculator{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    margin-top:60px;
+    gap:10px;
+    border-width: 5px;
+}
+
+#display{
+    grid-column: span 4;
+}
+
+#zero{
+    grid-column: span 2;
+}
+button:hover{
+    background-color: rgb(53, 53, 53);
+    color:white;
+}
+button{
+     border-radius: 5px;
+     border-width:1px;
+     background-color: lightgrey;
+}
+
+.special{
+    background-color: rgb(151, 149, 149);
+}
+</style>
+</head>
+<body>
+    <div class="calculator">
+    <input type="text" id="display" placeholder="0">
+    <div class="buttons">
+        
+        <button id="clear" class="special">AC</button>
+        <button id="percentage" class="special">%</button>
+        <button id="backspace" class="special">&#9003;</button>
+        <button id="divide" class="special">&divide;</button>
+        <button id="seven">7</button>
+        <button id="eight">8</button>
+        <button id="nine">9</button>
+        <button id="multiply" class="special">&times;</button>
+        <button id="four">4</button>
+        <button id="five">5</button>
+        <button id="six">6</button>
+        <button id="subtract" class="special">-</button>
+        <button id="one">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        <button id="add" class="special">+</button>
+        <button id="zero">0</button>
+        <button id="dot" class="special">.</button>
+        <button id="equal" class="special">=</button>
+        </div>
+        </div>
+
+    
+</body>
+</html>
